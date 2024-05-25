@@ -1,0 +1,295 @@
+* , *::after , *::before{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+@font-face {
+    font-family: 'oswald';
+    src: url(/Oswald-Bold.ttf);
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url(/Montserrat-Regular.ttf);
+}
+li{
+    list-style-type: none;
+}
+.navigation_bar{
+    display: flex;
+    background-color: #2E323F;
+    flex-direction: column;
+}
+.navigation_bar h2{
+    color: white;
+    font-family: oswald;
+    font-size: 4rem;
+    align-self: center;
+    margin-bottom: 0em;
+}
+
+.nav_list{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'oswald';
+    font-size: 2.3rem;
+    letter-spacing: .05em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+}
+button{
+    background-color: #A59678;
+    letter-spacing: .05em;
+    padding: .3em 1.2em;
+    border-radius: 2em;
+    border: none;
+    font-size: 2.3rem;
+    color: white;
+    font-family: oswald;
+    margin-top: 1em;
+    text-transform: uppercase;    
+    align-self: center;
+    margin-bottom: 1em;
+    margin-right: .5em;
+}
+.header{
+    padding-left: 2em;
+    background-color: #3b4050;
+}
+.tagline{
+    margin-top: 0;
+    font-size: 4.5rem;
+    color:#A59678 ;
+    font-family: oswald;
+    line-height: 1.1em;
+    padding-top: .5em;
+    
+}
+.white_text{
+    color: white;
+}
+.para{
+    font-size: 2rem;
+    font-family: montserrat;
+    color: white;
+    text-align: justify;
+   padding-right: 1em;
+   width: 95%;
+   margin-top: 0;
+}
+.header_left p{
+    padding-bottom: 0;
+}
+.learn_button{
+   margin-left: 33vw;
+   margin-top: 0.2em;
+
+}
+h3{
+    font-size: 3rem;
+    color:#A59678;
+    font-family: oswald;
+    margin: .5em 0em;
+    letter-spacing: .05em;
+    font-weight: 1000;
+}
+footer h3{
+    letter-spacing: normal;
+    font-size: 2.5rem;
+}
+.qualities{
+    background-color: #6f737f;
+    padding: 1em;
+    font-size: 1.8rem;
+    color: rgb(0 , 0 , 10);
+    font-family: 'montserrat';
+    text-align: justify;
+}
+.method{
+    padding: 1em 1em 0em 1em;
+    font-size: 2.1rem;
+    font-family: montserrat;
+    background-color: #ffffff;
+}
+h1{
+    font-size: 3rem;
+    font-family: oswald;
+    line-height: 1em;
+    color: #A59678;
+}
+aside{
+    font-size: 1.8rem;
+    padding: 0em 1em 1em 1em;
+    font-family: montserrat;
+    margin-top: 0;
+    color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: justify;
+   
+}
+.aside_para_heading{
+    font-size: 3rem;
+    font-family: oswald;
+    margin-top: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 1em;
+}
+.aside_para{
+    background-color: #3b4050;
+    padding: 1em;
+}
+
+footer{
+    background-color: #3b4050;
+    padding-left: 3em
+}
+.footer_heading{
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: oswald;
+    color: #fff;
+    padding-top: .5em;
+}
+.about_para{
+    font-size: 1.6rem;
+    font-family: montserrat;
+    color: #fff;
+    width: 80%;
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: montserrat;
+    color: white;
+}
+p:last-child{
+    padding-bottom: 2em;
+    margin-bottom: 0;
+}
+
+@media (min-width: 1000px){
+    .navigation_bar , .nav_list{
+        display: flex;
+        flex-direction: row;
+    }
+    .navigation_bar{
+       padding: 0;
+    }
+     .nav_list{
+        margin-left: 42vw;
+        gap: 1em;
+        margin-top: 1.2em;
+    }
+    button{
+        margin-right: 0em;
+        margin-left: 2.5em;
+    }
+    .logo{
+        margin-left: .5em;
+        margin-top: 0;
+        margin-bottom: .025em;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        gap: 12em;
+    }
+    .header_right{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .header_right p{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    .tagline{
+        font-size: 9rem;
+    }
+    .qualities{
+        display: flex;
+        flex-direction: row;
+        padding-left: 2em;
+    }
+    .qualities p{
+        width: 80%
+    }
+    .learn_button{
+        margin: 0 auto;
+    }
+    .central{
+        display: flex;
+        flex-direction: row;
+    }
+    aside {
+        align-self: center;
+        margin-top: 3em;
+        padding-left: 5em;
+    }
+    .aside_para{
+       width: 80%
+    }
+    .footer_lower{
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+        margin-top: 2em;
+    }
+    .about{
+        width: 50%;
+    }
+    .about_para{
+        width: 80%;
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        gap: 5em;
+    }
+    
+}
+@media (min-width: 700px) and (max-width: 999px){
+    aside{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        margin-left: .25em;
+        margin-top: 0;
+        margin-bottom: .025em;
+    }
+    .navigation_bar , .nav_list{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav_list{
+        margin: 0 auto;
+        margin-top: 1em;
+        gap: 1em;
+    }
+    
+    .navigation_bar{
+       justify-content: space-between;  
+    }
+   
+}
+@media (min-width: 700px) {
+    
+}
